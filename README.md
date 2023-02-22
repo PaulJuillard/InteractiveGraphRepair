@@ -45,4 +45,4 @@ Merges all datasets, computes metrics and produces results and graphs.
 Quick timing experiment to confirm the time to produce a new question is of the order of micro-seconds.
 
 # Footnote
-This work is produced by Paul Juillard as part of their EPFL master's internship supervised by Angela Bonifati and Andrea Mauri at Inria Lab in Lyon University
+This work is produced by Paul Juillard as part of their EPFL master's internship supervised by Angela Bonifati and Andrea Mauri at LIRIS Lab in Lyon University
