@@ -5,7 +5,7 @@ Interactive graph repair for neighborhood constraints with simulated users on bo
 
 # Reproducibility guidelines
 
-All the necessary material is included. Jupyter notebooks can be run independetly as previous checkpoints are provided.
+All the necessary material is included. Jupyter notebooks can be run independently as previous checkpoints are provided.
 Some cells might take a while to run but all terminate in reasonable time (~few hours) on a 16G main memory laptop with intel i7 processor.
 
 The code is produced with the following environment:
