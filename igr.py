@@ -623,6 +623,35 @@ def draw_GS(G,S, pos=None):
     draw_S(S,ax=ax2, pos=pos_S)
   return
 
+##### LABELLED GRAPH
+
+def graph_diff(G1, G2, theta = 0.5):
+  """ diff = theta * #relabelings + (1-theta) * #deletions
+  Assuming same node set
+  :param theta: theta as in cost
+  """
+  if(G1 == None) or (G2==None):
+    return None
+  
+  dist = 0
+
+  # differing label is a difference
+  for n in G1.nodes:
+    l = G1.nodes[n]['label']
+    h = G2.nodes[n]['label']
+    if(l != h):
+      dist = dist + theta
+
+  # differing edges is a difference
+  for e in G1.edges:
+    if e not in G2.edges:
+      dist = dist + 1 - theta
+  for e in G2.edges:
+    if e not in G1.edges:
+      dist = dist + 1 - theta
+
+  return dist
+
 
 
 
